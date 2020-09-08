@@ -138,3 +138,11 @@ task_serializer = "json"
 result_serializer = "json"
 
 djcelery.setup_loader()
+
+# 邮件设置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'  # 如果是 163 改成 smtp.163.com
+EMAIL_PORT = 465
+EMAIL_HOST_USER = '13551296510@163.com'  # 在这里填入您的邮箱账号
+EMAIL_HOST_PASSWORD = 'XCMJEWUTMEVUYFPD'  # 请在这里填上您自己邮箱的授权码
+EMAIL_USE_SSL = True
